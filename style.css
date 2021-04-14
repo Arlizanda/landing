@@ -1,0 +1,103 @@
+/* Write some CSS below */
+
+body{
+	font-family: 'Roboto', sans-serif;
+		background-color: rgb(230,230,230);
+		margin: 0;
+
+}
+h1,h2,h3{
+	font-family: 'Train One', cursive;
+}
+a{
+	color:#ce1212;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+a:hover{
+	color: #B10000;
+}
+
+.banner{
+	background-image: url(images/background.jpg);
+	padding: 200px 0;
+	color: white;
+	text-align: center;
+	background-position: center;
+}
+.banner h1{
+	font-size: 45px;
+}
+.banner p{
+	font-size: 25px;
+	opacity: 0.7;
+}
+.btn-red{
+	background-color: #ce1212;
+	padding: 16px 40 px;
+	color: white;
+	padding: 16px 40px;
+	border-radius: 5px;
+	transition: 0.75;
+}
+
+.bnt-red:hover{
+	background-color: #810000;
+	color: white;
+}
+.card{
+background-color: white;
+padding: 30px;
+margin: 20px;
+text-align: center; 
+box-shadow: 0 0 16px rgb(0,0,0,0.2);
+border-radius: 5px;
+}
+
+.card img{
+	width: 100%;
+}
+
+.cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+}
+.container{
+	width: 900px;
+	margin: 20px auto;
+}
+.footer{
+	background-color: black;
+	padding: 100px 20px;
+	color: white;
+}
+
+/*make page responsive*/
+/* cards media queries*/
+@media(max-width: 800px){
+	.cards{
+		grid-template-columns: 1fr;
+	}
+	.card-white{
+		width: auto;
+	}
+}
+/*container media queries*/
+@media(min-width: 500px){
+	.container{
+		width: 400px;
+	}
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
